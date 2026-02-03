@@ -1,0 +1,337 @@
+/* ================================================
+   WHAT'S NEW — whats-new.css
+   All selectors prefixed  wn-
+   Only consumes variables from style.css
+   ================================================ */
+
+/* ─── page-hero (shorter than home hero) ─── */
+.wn-page-hero {
+    min-height: 42vh;
+    padding-top: 140px;
+    padding-bottom: 48px;
+}
+
+/* ─── stats strip ─── */
+.wn-strip {
+    background: #fff;
+    box-shadow: var(--shadow-md);
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.wn-strip-row {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    flex-wrap: wrap;
+}
+
+.wn-strip-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.wn-strip-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.15));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.wn-strip-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.wn-strip-num {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.wn-strip-label {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+}
+
+/* ─── filter pills ─── */
+.wn-pills {
+    padding: 36px 0 0;
+    background: var(--bg-secondary);
+}
+
+.wn-pills-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wn-pill {
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    color: var(--text-secondary);
+    padding: 9px 20px;
+    border-radius: var(--radius-full);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-primary);
+}
+
+.wn-pill:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.wn-pill.active {
+    background: var(--gradient-1);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: var(--shadow-md);
+}
+
+/* ─── timeline section wrapper ─── */
+.wn-feed {
+    padding: 72px 0 88px;
+    background: var(--bg-secondary);
+}
+
+/* ─── centred column + vertical line ─── */
+.wn-track {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-left: 72px;
+}
+
+/* the line itself */
+.wn-track::before {
+    content: '';
+    position: absolute;
+    left: 34px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: 2px;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 55%, #e2e8f0 100%);
+}
+
+/* ─── single entry ─── */
+.wn-entry {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.wn-entry:last-child { margin-bottom: 0; }
+
+/* ─── circle dot ─── */
+.wn-dot {
+    position: absolute;
+    /* dot 42px wide → half 21.  line centre at 34.
+       entry left edge = 72 (padding-left of .wn-track).
+       left = 34 - 21 - 72  =  -59                       */
+    left: -59px;
+    top: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--gradient-1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--primary);
+    z-index: 1;
+}
+
+.wn-dot--amber {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #f59e0b;
+}
+
+/* ─── card ─── */
+.wn-card {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    padding: 30px 28px;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.wn-card:hover {
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.wn-card--major {
+    border-color: var(--primary);
+    background: linear-gradient(160deg, rgba(99,102,241,0.05) 0%, #fff 45%);
+}
+
+.wn-card--upcoming {
+    border: 2px dashed #f59e0b;
+    background: linear-gradient(160deg, rgba(245,158,11,0.07) 0%, #fff 45%);
+}
+
+.wn-card--upcoming:hover { border-color: #f97316; }
+
+/* ─── card header ─── */
+.wn-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.wn-card-head-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* version badge */
+.wn-ver {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.16));
+    color: var(--primary);
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+}
+
+.wn-ver--major {
+    background: var(--gradient-1);
+    color: #fff;
+    padding: 5px 16px;
+    font-size: 1rem;
+}
+
+.wn-ver--upcoming {
+    background: linear-gradient(135deg, rgba(245,158,11,0.14), rgba(249,115,22,0.18));
+    color: #d97706;
+}
+
+/* category tag */
+.wn-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+}
+
+.wn-tag--feature   { background: rgba(99,102,241,0.1);  color: var(--primary); }
+.wn-tag--fix       { background: rgba(16,185,129,0.12); color: #059669; }
+.wn-tag--security  { background: rgba(239,68,68,0.1);   color: var(--danger); }
+.wn-tag--upcoming  { background: rgba(245,158,11,0.14); color: #d97706; }
+
+/* date */
+.wn-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ─── card body ─── */
+.wn-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.18rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.wn-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.94rem;
+    margin-bottom: 18px;
+}
+
+/* ─── changelog rows ─── */
+.wn-log {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wn-log-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.87rem;
+    padding: 6px 11px;
+    border-radius: var(--radius-md);
+}
+
+.wn-log-row i {
+    width: 16px;
+    text-align: center;
+    font-size: 0.72rem;
+    flex-shrink: 0;
+}
+
+.wn-log-row--add        { background: rgba(16,185,129,0.08); color: #065f46; }
+.wn-log-row--add i      { color: #10b981; }
+
+.wn-log-row--fix        { background: rgba(239,68,68,0.08);  color: #991b1b; }
+.wn-log-row--fix i      { color: var(--danger); }
+
+.wn-log-row--plan       { background: rgba(245,158,11,0.1);  color: #92400e; }
+.wn-log-row--plan i     { color: #f59e0b; }
+
+/* ─── responsive ─── */
+@media (max-width: 600px) {
+    .wn-track {
+        padding-left: 46px;
+    }
+
+    .wn-track::before {
+        left: 21px;
+    }
+
+    /* dot 36px → half 18.  left = 21 - 18 - 46 = -43 */
+    .wn-dot {
+        left: -43px;
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+        top: 18px;
+    }
+
+    .wn-card {
+        padding: 22px 18px;
+    }
+
+    .wn-strip-row {
+        gap: 24px;
+    }
+
+    .wn-card-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

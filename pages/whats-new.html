@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's New - Kedarnath Yatra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/whats-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🏔️</span>
+                <span class="logo-text">Char Dham Yatra</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="why-blockchain.html">Why Blockchain</a></li>
+                <li><a href="whats-new.html" class="active">What's New</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><button id="connectWalletBtn" class="btn-wallet">🔗 Connect Wallet</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero wn-hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Latest Updates & Roadmap</span>
+                <h1 class="hero-title">What's <span class="gradient-text">New</span></h1>
+                <p class="hero-description">
+                    Stay updated with the latest features, improvements, and upcoming plans for the Kedarnath Yatra platform.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="wn-stats-bar">
+        <div class="container">
+            <div class="wn-stats-row">
+                <div class="wn-stat">
+                    <div class="wn-stat-icon"><i class="fas fa-code-branch"></i></div>
+                    <div>
+                        <span class="wn-stat-num">v2.4</span>
+                        <span class="wn-stat-label">Current Version</span>
+                    </div>
+                </div>
+                <div class="wn-stat">
+                    <div class="wn-stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div>
+                        <span class="wn-stat-num"></span>
+                        <span class="wn-stat-label">Updates This Month</span>
+                    </div>
+                </div>
+                <div class="wn-stat">
+                    <div class="wn-stat-icon"><i class="fas fa-bug"></i></div>
+                    <div>
+                        <span class="wn-stat-num">0</span>
+                        <span class="wn-stat-label">Open Bugs</span>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="wn-filters">
+        <div class="container">
+            <div class="wn-filter-row">
+                <button class="wn-filter-btn active" data-filter="all">All Updates</button>
+                <button class="wn-filter-btn" data-filter="feature">🚀 Features</button>
+                <button class="wn-filter-btn" data-filter="fix">🔧 Fixes</button>
+                <button class="wn-filter-btn" data-filter="security">🛡️ Security</button>
+                <button class="wn-filter-btn" data-filter="upcoming">🔮 Upcoming</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="wn-timeline-section">
+        <div class="container">
+            <div class="wn-timeline">
+
+                <!-- v2.4 -->
+                <div class="wn-timeline-item" data-category="feature">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="wn-timeline-card">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version">v2.4</span>
+                                <span class="wn-tag wn-tag-feature">Feature</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 28, 2025</span>
+                        </div>
+                        <h3>Auto Account Switching & Role Detection</h3>
+                        <p>
+                            MetaMask account changes are now detected instantly. When you switch between Admin, Provider,
+                            or Customer wallets the UI updates automatically — no refresh needed. Role is detected
+                            by comparing your address against the contract owner and provider list.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Live accountsChanged listener</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Instant role switching (Admin / Provider / Customer)</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Yellow notification on account switch</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Disconnect button added</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- v2.3 -->
+                <div class="wn-timeline-item" data-category="feature">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="wn-timeline-card">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version">v2.3</span>
+                                <span class="wn-tag wn-tag-feature">Feature</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 25, 2025</span>
+                        </div>
+                        <h3>Multi-Role Dashboard</h3>
+                        <p>
+                            Unified interface now serves all three user roles inside a single page.
+                            Admin can create packages, Customers browse and book, Providers track services
+                            and withdraw earnings — all without navigating away.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Tab-based Admin / Customer / Provider panels</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Provider balance card with live withdrawal</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Real-time package status badges</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- v2.2 -->
+                <div class="wn-timeline-item" data-category="fix">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="wn-timeline-card">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version">v2.2</span>
+                                <span class="wn-tag wn-tag-fix">Fix</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 22, 2025</span>
+                        </div>
+                        <h3>Package Data Parsing Fix</h3>
+                        <p>
+                            Resolved the "pkg is not iterable" error that prevented packages from
+                            loading on the customer view. Web3 returns contract call results as
+                            index-keyed objects, not arrays — the parser now handles both formats.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-fix"><i class="fas fa-minus"></i> Fixed destructuring crash on getPackage()</div>
+                            <div class="wn-change wn-change-fix"><i class="fas fa-minus"></i> Fixed getService() index access</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Added fallback keys for all contract returns</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Added console logging for every contract call</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- v2.1 -->
+                <div class="wn-timeline-item" data-category="security">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="wn-timeline-card">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version">v2.1</span>
+                                <span class="wn-tag wn-tag-security">Security</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 20, 2025</span>
+                        </div>
+                        <h3>Network Validation & Chain Switch</h3>
+                        <p>
+                            The app now checks the active chain on every wallet connect.
+                            If you're on the wrong network, it prompts MetaMask to add
+                            or switch to Ganache Local automatically — no manual config required.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Auto wallet_switchEthereumChain on connect</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> wallet_addEthereumChain fallback for new installs</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> chainChanged listener reloads page</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- v2.0 -->
+                <div class="wn-timeline-item" data-category="feature">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="wn-timeline-card wn-card-major">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version wn-version-major">v2.0</span>
+                                <span class="wn-tag wn-tag-feature">Major Release</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 15, 2025</span>
+                        </div>
+                        <h3>KedarnathBooking Smart Contract Launch</h3>
+                        <p>
+                            Full smart contract deployed on Ganache with all core flows: Admin package
+                            creation, Customer booking with ETH payment, multi-provider service
+                            tracking, and provider withdrawal. Six Ganache accounts mapped to roles.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> addPackage() — admin creates packages with N services</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> bookPackage() — customer pays exact totalPrice in wei</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> markServiceComplete() — provider marks & earns</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> withdrawPayments() — provider pulls balance to wallet</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> 6-account role mapping: Admin / Hotel / Taxi / Food / Meals / Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- v1.0 -->
+                <div class="wn-timeline-item" data-category="feature">
+                    <div class="wn-timeline-dot">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="wn-timeline-card">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version">v1.0</span>
+                                <span class="wn-tag wn-tag-feature">Initial Release</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-calendar"></i> January 10, 2025</span>
+                        </div>
+                        <h3>Project Kickoff</h3>
+                        <p>
+                            First working prototype with MetaMask wallet connection, Ganache local chain setup,
+                            Remix IDE deployment, and basic HTML frontend. Foundation for the full booking platform.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Ganache + Remix development environment</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> MetaMask connect / disconnect</div>
+                            <div class="wn-change wn-change-add"><i class="fas fa-plus"></i> Basic contract deploy & interact</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming -->
+                <div class="wn-timeline-item" data-category="upcoming">
+                    <div class="wn-timeline-dot wn-dot-upcoming">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="wn-timeline-card wn-card-upcoming">
+                        <div class="wn-card-header">
+                            <div class="wn-version-row">
+                                <span class="wn-version wn-version-upcoming">v3.0</span>
+                                <span class="wn-tag wn-tag-upcoming">Coming Soon</span>
+                            </div>
+                            <span class="wn-date"><i class="fas fa-clock"></i> Planned — Q2 2025</span>
+                        </div>
+                        <h3>Roadmap: What We're Building Next</h3>
+                        <p>
+                            Upcoming features currently in design or development. We're expanding
+                            the platform to support multiple destinations, fiat on-ramps, and a
+                            review system so pilgrims can rate every service provider.
+                        </p>
+                        <div class="wn-change-list">
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> Multi-destination support (Yamunotri, Gangotri, Badrinath)</div>
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> INR → ETH on-ramp integration</div>
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> On-chain review & rating system</div>
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> Booking cancellation & partial refund logic</div>
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> Mobile-responsive booking checkout flow</div>
+                            <div class="wn-change wn-change-upcoming"><i class="fas fa-circle"></i> NFT-based boarding pass for each yatra</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end timeline -->
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Try the Latest Build?</h2>
+                <p>Connect your wallet and experience the full booking flow live on Ganache.</p>
+                <a href="booking.html" class="btn btn-large">
+                    <i class="fas fa-rocket"></i> Open Booking
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><span class="logo-icon">🏔️</span>  Char Dham Yatra</h3>
+                    <p>Revolutionizing sacred journeys with blockchain technology. Transparent, secure, and decentralized.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="booking.html">Book Journey</a></li>
+                        <li><a href="why-blockchain.html">Why Blockchain</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Smart Contract</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Char Dham Yatra Blockchain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/web3-config.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Filter logic
+        document.querySelectorAll('.wn-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.wn-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.wn-timeline-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

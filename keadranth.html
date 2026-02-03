@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char Dham Yatra - Blockchain Booking Platform</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🏔️</span>
+                <span class="logo-text">Char Dham Yatra</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/booking.html">Book Now</a></li>
+                <li><a href="pages/why-blockchain.html">Why Blockchain</a></li>
+                <li><a href="pages/whats-new.html">What's New</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><button id="connectWalletBtn" class="btn-wallet">🔗 Connect Wallet</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Powered by Blockchain Technology</span>
+                <h1 class="hero-title">
+                    Sacred Journey to<br>
+                    <span class="gradient-text">Char Dham</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the divine pilgrimage with transparent, secure, and decentralized booking powered by Ethereum blockchain. Every transaction is immutable, every service provider is verified.
+                </p>
+                <div class="hero-buttons">
+                    <a href="pages/booking.html" class="btn btn-primary">
+                        <i class="fas fa-ticket-alt"></i> Book Your Journey
+                    </a>
+                    <a href="pages/why-blockchain.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalBookings">0</div>
+                        <div class="stat-label">Total Bookings</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Transparency</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Availability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-subtitle">Revolutionary blockchain technology meets spiritual journey</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Transactions</h3>
+                    <p>Every booking is secured on Ethereum blockchain, making it immutable and tamper-proof.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Complete Transparency</h3>
+                    <p>Track your payment flow in real-time. See exactly where your money goes to each service provider.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Direct to Provider</h3>
+                    <p>No middlemen. Your payment goes directly to hotels, taxis, and food providers through smart contracts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Instant Verification</h3>
+                    <p>Service providers mark completion on blockchain. Instant verification, no disputes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Decentralized System</h3>
+                    <p>No central authority controls your bookings. True peer-to-peer sacred journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Permanent Records</h3>
+                    <p>Your booking history stored forever on blockchain. Accessible anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple steps to your divine journey</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Connect Wallet</h3>
+                        <p>Connect your MetaMask wallet to get started. It's free and takes just 10 seconds.</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Choose Package</h3>
+                        <p>Browse available packages with transparent pricing. See all services included.</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Pay with Crypto</h3>
+                        <p>Secure payment through blockchain. Money locked in smart contract.</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Enjoy Journey</h3>
+                        <p>Providers deliver services and get paid automatically upon completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Benefits -->
+    <section class="blockchain-benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>The Power of Blockchain</h2>
+                    <p class="lead">Traditional booking platforms take 15-30% commission. We take 0%.</p>
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>No hidden fees or commissions</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Instant payment to service providers</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Smart contracts ensure fairness</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>100% transparent transaction history</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Immutable booking records</span>
+                        </div>
+                    </div>
+                    <a href="pages/why-blockchain.html" class="btn btn-outline">
+                        <i class="fas fa-book"></i> Learn More About Blockchain
+                    </a>
+                </div>
+                <div class="benefits-visual">
+                    <div class="comparison-card">
+                        <h4>Traditional Platform</h4>
+                        <div class="comparison-items">
+                            <div class="comparison-item negative">15-30% Commission</div>
+                            <div class="comparison-item negative">Delayed Payments</div>
+                            <div class="comparison-item negative">No Transparency</div>
+                            <div class="comparison-item negative">Centralized Control</div>
+                        </div>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="comparison-card highlight">
+                        <h4>Our Blockchain Platform</h4>
+                        <div class="comparison-items">
+                            <div class="comparison-item positive">0% Commission</div>
+                            <div class="comparison-item positive">Instant Payments</div>
+                            <div class="comparison-item positive">100% Transparent</div>
+                            <div class="comparison-item positive">Decentralized</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Sacred Journey?</h2>
+                <p>Join thousands of pilgrims who trust blockchain for their Kedarnath Yatra</p>
+                <a href="pages/booking.html" class="btn btn-large">
+                    <i class="fas fa-rocket"></i> Book Now on Blockchain
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><span class="logo-icon">🏔️</span> Char Dham  Yatra</h3>
+                    <p>Revolutionizing sacred journeys with blockchain technology. Transparent, secure, and decentralized.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/booking.html">Book Journey</a></li>
+                        <li><a href="pages/why-blockchain.html">Why Blockchain</a></li>
+                        <li><a href="pages/whats-new.html">What's New</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Smart Contract</a></li>
+                        <li><a href="#">Whitepaper</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Char Dham  Yatra Blockchain. All rights reserved.</p>
+                <p>Built with ❤️ on Ethereum | <a href="https://etherscan.io" target="_blank">View on Etherscan</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/web3-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

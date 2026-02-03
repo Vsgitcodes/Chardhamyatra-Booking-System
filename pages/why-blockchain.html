@@ -1,0 +1,345 @@
+cat > /mnt/user-data/outputs/kedarnath-website/pages/why-blockchain.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Blockchain - Kedarnath Yatra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🏔️</span>
+                <span class="logo-text">Char Dham Yatra</span>
+
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="why-blockchain.html" class="active">Why Blockchain</a></li>
+                <li><a href="whats-new.html">What's New</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><button id="connectWalletBtn" class="btn-wallet">🔗 Connect Wallet</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: 120px;">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Why <span class="gradient-text">Blockchain</span>?
+                </h1>
+                <p class="hero-description">
+                    Discover how blockchain technology revolutionizes travel booking with transparency, security, and fairness
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="features" style="padding: 60px 0;">
+        <div class="container">
+            
+            <!-- Introduction -->
+            <div style="max-width: 800px; margin: 0 auto 60px; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 20px;">The Problem with Traditional Booking Platforms</h2>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;">
+                    Traditional travel booking platforms charge <strong>15-30% commission</strong>, delay payments to service providers, 
+                    lack transparency, and centralize control. Blockchain technology solves all these problems.
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Zero Commission</h3>
+                    <p>
+                        No middlemen taking 15-30% cuts. 100% of your payment goes directly to service providers through 
+                        smart contracts. What you pay is what they receive.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Settlements</h3>
+                    <p>
+                        Service providers receive payment immediately upon marking service complete. No waiting 30-60 days 
+                        for traditional platforms to process payments.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Immutable Records</h3>
+                    <p>
+                        Every booking is permanently recorded on Ethereum blockchain. Cannot be altered or deleted. 
+                        Complete audit trail forever.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Smart Contracts</h3>
+                    <p>
+                        Automated execution of agreements. No human intervention needed. When conditions are met, 
+                        payments are automatically released. Zero disputes.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Full Transparency</h3>
+                    <p>
+                        See exactly where every penny goes. Track your payment flow in real-time on the blockchain. 
+                        View transaction history anytime on Etherscan.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Decentralized</h3>
+                    <p>
+                        No single point of failure. No company can shut down or censor your bookings. 
+                        Runs on thousands of nodes worldwide.
+                    </p>
+                </div>
+            </div>
+
+            <!-- How It Works Technically -->
+            <div style="margin-top: 80px;">
+                <h2 class="section-title text-center" style="margin-bottom: 40px;">How Our Smart Contracts Work</h2>
+                
+                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-xl); max-width: 900px; margin: 0 auto;">
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        
+                        <div style="display: flex; gap: 20px; align-items: start;">
+                            <div style="min-width: 50px; height: 50px; background: var(--gradient-1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.25rem;">1</div>
+                            <div>
+                                <h4 style="margin-bottom: 10px;">Admin Adds Package</h4>
+                                <p style="color: var(--text-secondary);">
+                                    Admin creates a package with services (hotel, taxi, food, meals) and assigns each service to a verified provider address. 
+                                    Smart contract stores all details on blockchain.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px; align-items: start;">
+                            <div style="min-width: 50px; height: 50px; background: var(--gradient-1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.25rem;">2</div>
+                            <div>
+                                <h4 style="margin-bottom: 10px;">Customer Books & Pays</h4>
+                                <p style="color: var(--text-secondary);">
+                                    Customer pays total amount in ETH. Money is locked in the smart contract (not in anyone's wallet). 
+                                    Transaction recorded on blockchain with timestamp.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px; align-items: start;">
+                            <div style="min-width: 50px; height: 50px; background: var(--gradient-1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.25rem;">3</div>
+                            <div>
+                                <h4 style="margin-bottom: 10px;">Services Delivered</h4>
+                                <p style="color: var(--text-secondary);">
+                                    Each provider delivers their service (hotel stay, taxi ride, meals). After completion, 
+                                    they mark service as complete on blockchain using their wallet.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px; align-items: start;">
+                            <div style="min-width: 50px; height: 50px; background: var(--gradient-1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.25rem;">4</div>
+                            <div>
+                                <h4 style="margin-bottom: 10px;">Automatic Payment Release</h4>
+                                <p style="color: var(--text-secondary);">
+                                    Smart contract automatically credits provider's balance. Provider can withdraw ETH to their wallet anytime. 
+                                    No waiting, no manual processing, no disputes.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Features -->
+            <div style="margin-top: 80px;">
+                <h2 class="section-title text-center" style="margin-bottom: 40px;">Security & Trust</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                            <i class="fas fa-shield-alt" style="color: var(--success);"></i>
+                            Ethereum Network Security
+                        </h4>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                            Protected by the world's largest decentralized computer network. Thousands of validators 
+                            secure every transaction. Impossible to hack or manipulate.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                            <i class="fas fa-lock" style="color: var(--success);"></i>
+                            Cryptographic Signatures
+                        </h4>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                            Every transaction signed with your private key. Only you can authorize payments from your wallet. 
+                            No one else can access your funds.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4 style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                            <i class="fas fa-file-contract" style="color: var(--success);"></i>
+                            Audited Smart Contracts
+                        </h4>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                            Our smart contracts are open-source and audited. You can verify the code yourself on Etherscan. 
+                            No hidden backdoors or surprises.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div style="margin-top: 80px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h2 class="section-title text-center" style="margin-bottom: 40px;">Frequently Asked Questions</h2>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">Do I need cryptocurrency to book?</h4>
+                        <p style="color: var(--text-secondary);">
+                            Yes, you need ETH (Ethereum) in your MetaMask wallet. You can buy ETH from exchanges like Coinbase, 
+                            Binance, or WazirX and transfer to your MetaMask wallet.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">Is my payment safe?</h4>
+                        <p style="color: var(--text-secondary);">
+                            Absolutely. Your payment is locked in a smart contract on Ethereum blockchain - the most secure 
+                            decentralized network in the world. No person or company can access it except through the automated 
+                            smart contract rules.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">What if a service provider doesn't deliver?</h4>
+                        <p style="color: var(--text-secondary);">
+                            Service providers only get paid when they mark service as complete using their blockchain address. 
+                            If service isn't delivered, they can't mark it complete, and the money stays locked in contract.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">Can I get a refund?</h4>
+                        <p style="color: var(--text-secondary);">
+                            Refund policies are encoded in the smart contract. For this version, once booked and services 
+                            start being delivered, the booking is final. Future versions will include partial refund mechanisms.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: var(--shadow-md);">
+                        <h4 style="margin-bottom: 10px; color: var(--primary);">Why is blockchain better than traditional payment?</h4>
+                        <p style="color: var(--text-secondary);">
+                            Zero commission (traditional platforms take 15-30%), instant payments (not 30-60 days), 
+                            complete transparency (see every transaction), no central authority (truly peer-to-peer), 
+                            and permanent records (can't be deleted or altered).
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; margin-top: 80px; padding: 60px 20px; background: var(--gradient-1); border-radius: 20px; color: white;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Experience the Future?</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 30px; opacity: 0.9;">
+                    Join the blockchain revolution in sacred travel booking
+                </p>
+                <a href="booking.html" class="btn btn-large" style="background: white; color: var(--primary);">
+                    <i class="fas fa-rocket"></i> Start Your Journey
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><span class="logo-icon">🏔️</span> Kedarnath Yatra</h3>
+                    <p>Revolutionizing sacred journeys with blockchain technology</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="why-blockchain.html">Why Blockchain</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kedarnath Yatra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/web3-config.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+EOF
+cat /mnt/user-data/outputs/kedarnath-website/pages/why-blockchain.html | head -20
+Output
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Blockchain - Kedarnath Yatra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🏔️</span>
+                <span class="logo-text">Kedarnath Yatra</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
